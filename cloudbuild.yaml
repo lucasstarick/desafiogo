@@ -8,9 +8,9 @@ steps:
       # env: ["GOPATH=."]
       args: ["test","sum"]
 
-    - id: your_step_here
+    - id: Run project
       name: "gcr.io/cloud-builders/go"
-      env: ["GOPATH=."]
+      # env: ["GOPATH=."]
       args: ["run","sum"]
 
 images:
