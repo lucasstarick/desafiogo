@@ -11,7 +11,7 @@ steps:
     - id: your_step_here
       name: "gcr.io/cloud-builders/go"
       env: ["GOPATH=."]
-      args: ["run","sum]
+      args: ["run","sum"]
 
 images:
     - 'gcr.io/$PROJECT_ID/desafiogo:latest'
