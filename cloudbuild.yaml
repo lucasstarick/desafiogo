@@ -5,8 +5,8 @@ steps:
 
     - id: "Rodando test"
       name: 'gcr.io/cloud-builders/go'
-      env: ["GOPATH=/src/sum"]
-      args: ['test']
+      env: ["GOPATH=."]
+      args: ["test","sum"]
 
 images:
     - 'gcr.io/$PROJECT_ID/desafiogo:latest'
