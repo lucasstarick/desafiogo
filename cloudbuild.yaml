@@ -5,6 +5,7 @@ steps:
 
     - id: "Rodando test"
       name: 'gcr.io/cloud-builders/go'
+      env: ["GOPATH=."]
       args: ['test']
 
 images:
