@@ -5,8 +5,6 @@ RUN ls
 
 FROM hello-world:latest
 COPY --from=builder /go/sum .
-RUN pwd
-COPY --from=builder /src/sum/sum_test .
 
 ENTRYPOINT [ "/sum"]
 
