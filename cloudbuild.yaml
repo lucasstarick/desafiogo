@@ -1,0 +1,9 @@
+steps:
+    - id: "Push da imagem gerada no processo de CI no Container Registry do GCP"
+      name: 'gcr.io/cloud-builders/docker'
+      args: ['build','-t','gcr.io/$PROJECT_ID/desafiogo:latest','.']
+
+# images:
+#     - 'gcr.io/$PROJECT_ID/desafiogo:latest'
+
+# tags: ['cloud-builders-community']
